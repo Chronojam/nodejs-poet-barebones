@@ -1,0 +1,6 @@
+extends layout
+
+block content
+    a(href=tagURL(tag)) posts tagged with #{tag}
+    - each post in posts
+        include includes/postSnippet

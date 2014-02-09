@@ -1,0 +1,6 @@
+h3 All Categories
+.ui.bulleted.list
+	- each cat in getCategories()
+		.item
+			.content
+				a.header(href=categoryURL(cat)) #{cat}

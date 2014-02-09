@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= tuile
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/semantic.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    div.ui.fixed.transparent.inverted.main.menu
+        div.container
+            a.item.active(href='/')
+                i.icon.home
+                | blog
+            a.item(href='/projects')
+                i.icon.cloud
+                | item
+            a.item
+                i.icon.mail
+                | item
+
+    div.ui.stackable.grid
+      div.ui.two.column.row
+        div.ui.column.eleven.wide
+          div.segment
+            block content
+        div.column.five.wide
+          div.segment
+            include categories
+
+    
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js')
+  script(src='/javascript/semantic.js')

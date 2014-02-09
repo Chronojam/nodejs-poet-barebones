@@ -1,0 +1,17 @@
+html,
+body {
+  font-size: 1rem;
+  line-height:25px;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #555555;
+  min-width: 320px;
+}
+
+a {
+	text-decoration: none;
+}

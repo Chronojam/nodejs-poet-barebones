@@ -1,0 +1,13 @@
+.ui.pagination.menu.floated.right
+  - var i = 1;
+  a.icon.item(href=pageURL(+page-1))
+    i.icon.left.arrow
+  - while ( i <= getPageCount() )
+    if page == i
+      a.active.item
+        =i
+    else
+      a.item(href=pageURL(i)) #{i}
+    - i++;
+  a.icon.item(href=pageURL(+page+1)) 
+      i.right.arrow.icon

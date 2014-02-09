@@ -1,0 +1,16 @@
+div.ui.segment.post
+  .ui.column.left.floated
+    h2.ui.header
+      #a(href=post.url)
+      =post.title
+    span #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+
+  .ui.column.right.floated
+    - each tag in post.tags
+      a.ui.label(href=tagUrl(tag))
+        span.label.label-info #{tag}
+
+  .ui.clearing.divider
+  div.post.ui.content
+    != post.content
+
